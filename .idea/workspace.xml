@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1d16f8d-d943-4e18-b26c-8ea6cb4306cd" name="Changes" comment="With user inputs for winner predictions, match_time">
+    <list default="true" id="d1d16f8d-d943-4e18-b26c-8ea6cb4306cd" name="Changes" comment="Up to user selection for impact player selection from 22 list of players">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/D11_Predictor_MainFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/D11_Predictor_MainFile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +13,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
+  <component name="ChangesViewManager" show_ignored="true">
     <option name="groupingKeys">
       <option value="directory" />
     </option>
@@ -122,7 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675268849929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Up to user selection for impact player selection from 22 list of players">
+      <created>1677335088000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677335088000</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Up to user selection for impact player selection from 22 list of players">
+      <created>1677335432064</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677335432064</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,6 +145,7 @@
     <MESSAGE value="Code up to user input for Pitch" />
     <MESSAGE value="User input file" />
     <MESSAGE value="With user inputs for winner predictions, match_time" />
-    <option name="LAST_COMMIT_MESSAGE" value="With user inputs for winner predictions, match_time" />
+    <MESSAGE value="Up to user selection for impact player selection from 22 list of players" />
+    <option name="LAST_COMMIT_MESSAGE" value="Up to user selection for impact player selection from 22 list of players" />
   </component>
 </project>

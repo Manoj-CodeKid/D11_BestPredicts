@@ -8,7 +8,8 @@ print(Dataframe1)
 Dataframe2=pd.read_excel('Cricketit.xlsm',usecols="A",nrows=11,header=0)
 Dataframe3=pd.read_excel('Cricketit.xlsm',usecols="D",nrows=11,header=0)
 players_list=(np.append(Dataframe2.values,Dataframe3.values))
-#print(players_list)
+impact_players_selection_list=players_list
+print(type(players_list))
 #print(Dataframe3.shape)
 
 Team1_name=Dataframe1.columns.values[0]
@@ -33,13 +34,18 @@ team_structure=int(input("Press 1 for 7:4 structure, 2 for 10:1 Structure : "))
 additional_inputs=int(input("Press 1 to customize your team selection further, 2 to proceed directly for teams generation : "))
 if additional_inputs==1:
     impact_player1_response=int(input("Press 1 to select an impact player to have in all your teams : "))
+    impact_player_list=[]
 else:
     print("Ok")
-if impact_player1_response==1:
-    impact_player_select=[inquirer.List('Impact Player selection',message="Select your impact player1 : ",choices=players_list.tolist())]
-impact_player1=inquirer.prompt(impact_player_select)
-print("You have selected {} as one of impact player to have in all of your teams".format(impact_player1["Impact Player selection"]))
+while impact_player1_response==1:
+    impact_player_select=[inquirer.List('Impact Player selection',message="Select your impact player1 : ",choices=impact_players_selection_list.tolist())]
+    impact_player1=inquirer.prompt(impact_player_select)
+    print("You have added {} as one of impact player to have in all of your teams".format(impact_player1["Impact Player selection"]))
+    impact_player_list.append(impact_player1["Impact Player selection"])
+    impact_players_selection_list=np.delete(impact_players_selection_list,np.where(impact_players_selection_list==impact_player1["Impact Player selection"]))
+    impact_player1_response=int(input("Press 1 to add one more player to your impact list,2 to proceed for team selection:"))
 
+print("Impact player list :",impact_player_list)
 
 
 
